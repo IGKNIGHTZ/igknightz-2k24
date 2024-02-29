@@ -703,6 +703,109 @@ body.nav-active { overflow: hidden; }
 }
 
 /*-----------------------------------*\
+  #Contact us
+\*-----------------------------------*/
+
+.contact-body {
+  padding: 80px;
+  height: 130vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+.contact-main {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-body .mainHeading {
+  margin-top: 10%;
+  color: black;
+  font-size: 0px;
+  font-weight: 900;
+}
+
+
+
+
+
+.contact-body .contact-right {
+  width: 40%;
+  height: 80%;
+  margin-left: 10px;
+  background-color: white;
+  margin-right: 10px;
+
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-body #googleMap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-body #contact-left #icon {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-body #contact-left #icon i {
+  color: black;
+  font-size: 25px;
+  user-select: none;
+}
+
+.contact-body #address {
+  width: 100%;
+  display: flex;
+
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.contact-body #contacts {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+
+  justify-content: flex-start;
+}
+
+.contact-body #email {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+
+  justify-content: flex-start;
+}
+
+
+
+/*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
 
@@ -794,68 +897,6 @@ body.nav-active { overflow: hidden; }
 }
 
 
-.contact-body{
-    background-color: #000;
-    color: #fff;
-}
-
-#ContactUs{
-  width: 100vw;
-  height: 110vh;
-  padding: 20vh;
-  display: flex;
-  gap: 40px;
-  overflow: hidden;
-
-}
-
-#contact {
-  width: 50%;
-  height: 100%;
-}
-
-#contact h1 {
-  font-size: 6.7rem;
-  margin-bottom: 9%;
-  color: white;
-  font-weight: 700;
-  padding: 0vh 20vh;
-}
-#contact h2 {
-  font-size: 3.7rem;
-  margin-bottom: 3%;
-  color: white;
-  font-weight: 700;
-  padding: 0vh 20vh;
-}
-
-#contact h1 {
-  color: white;
-  font-size: 30px;
-  font-weight: 600;
-  padding: 0vh 20vh;
-}
-#contact p {
-  font-size: 24px;
-  line-height: 1.7;
-  font-weight: 400;
-  margin-bottom: 23px;
-  padding: 0vh 20vh;
-}
-
-#contact h3 {
-  font-size: 24px;
-  line-height: 1.7;
-  font-weight: 400;
-  padding: 0vh 20vh;
-}
-
-#contactUs h1 {
-  font-family: "Protest Strike", sans-serif;
-  letter-spacing: 5px;}
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -916,7 +957,12 @@ body.nav-active { overflow: hidden; }
      */
   
     .hero-btn { transform: scale(0.7); }
+    .contact-body{
+      background-color: #000;
+      color: #fff;
+  }
   
+ 
   
   
     /**
@@ -1236,5 +1282,6 @@ body.nav-active { overflow: hidden; }
   
     .navbar { margin-inline: auto; }
   
+  }
   }
   }
