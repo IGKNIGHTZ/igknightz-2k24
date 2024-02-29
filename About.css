@@ -728,9 +728,10 @@ body.nav-active { overflow: hidden; }
 }
 
 #left img {
-  width: 100%;
-  height: 100%;
+  width: 130%;
+  height: 110%;
   object-fit: fill;
+  margin-inline-start: -20%;
 }
 
 #right {
@@ -972,9 +973,11 @@ h1#staffHeading {
   }
 
   #left {
-    width: 100%;
-    height: 50%;
-    padding: 20px;
+    position:relative;
+  padding: 20px ;
+  width: 104%;
+  height: 40%;
+  margin-inline-start: 1%;
   }
 
   #right {
