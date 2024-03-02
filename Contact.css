@@ -706,103 +706,92 @@ body.nav-active { overflow: hidden; }
   #Contact us
 \*-----------------------------------*/
 
-.contact-body {
-  padding: 80px;
-  height: 130vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.about-main {
+  background: #000;
+  color: #fff;
+}
+
+#aboutUs {
+width: 100vw;
+height: 110vh;
+display: flex;
+overflow: hidden;
+}
+
+#right {
+width: 50%;
+height: 100%;
+padding: 50px 50px 40px 30px;
+}
+
+#aboutUs hr {
+width: 50%;
+height: 2px;
+border: none;
+background-color: var(--white);
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+#right h4 {
+font-size: 4.7rem;
+margin-bottom: 2%;
+color: white;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1px;
+word-spacing: 2px;
+}
+
+
+#right h1 {
+color: white;
+font-size: 40px;
+font-weight: 200;
+margin-top: 7%;
+}
+#right p {
+font-size: 23px;
+line-height: 1.7;
+font-weight: 400;
+}
+
+@media (max-width: 700px) {
+#aboutUs {
+  height: 120vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
-  font-family: "Rubik", sans-serif;
-  color: white;
-  box-sizing: border-box;
 }
-
-.contact-main {
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-body .mainHeading {
-  margin-top: 10%;
-  color: black;
-  font-size: 0px;
-  font-weight: 900;
-}
-
-
-
-
-
-.contact-body .contact-right {
-  width: 40%;
-  height: 80%;
-  margin-left: 10px;
-  background-color: white;
-  margin-right: 10px;
-
-  padding: 10px;
+#aboutUs hr {
+  position: relative;
+  left: 35px;
+  width: 80%;
+  height: 4px;
   border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
-.contact-body #googleMap {
+#right {
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 50%;
 }
 
-.contact-body #contact-left #icon {
-  width: 80px;
-  height: 80px;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#right h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+#right h4 {
+  color:var(--white);
+  margin-bottom: 2%;
+  font-size: 3rem;
+  text-align: center;
 }
 
-.contact-body #contact-left #icon i {
-  color: black;
-  font-size: 25px;
-  user-select: none;
+#right p {
+  text-align: center;
 }
-
-.contact-body #address {
-  width: 100%;
-  display: flex;
-
-  justify-content: flex-start;
-  gap: 20px;
-}
-
-.contact-body #contacts {
-  width: 100%;
-  display: flex;
-  gap: 20px;
-
-  justify-content: flex-start;
-}
-
-.contact-body #email {
-  width: 100%;
-  display: flex;
-  gap: 20px;
-
-  justify-content: flex-start;
-}
-
 
 
 /*-----------------------------------*\
@@ -1035,51 +1024,8 @@ body.nav-active { overflow: hidden; }
   
   
   
-    /**
-     * HERO
-     */
-  
-    .hero .slider-btn {
-      display: grid;
-      position: absolute;
-      z-index: 1;
-      color: var(--gold-crayola);
-      font-size: 2.4rem;
-      border: 1px solid var(--gold-crayola);
-      width: 45px;
-      height: 45px;
-      place-items: center;
-      top: 50%;
-      transform: translateY(-50%) rotate(45deg);
-      transition: var(--transition-1);
-    }
-  
-    .hero .slider-btn ion-icon { transform: rotate(-45deg); }
-  
-    .hero .slider-btn.prev { left: 30px; }
-  
-    .hero .slider-btn.next { right: 30px; }
-  
-    .hero .slider-btn:is(:hover, :focus-visible) {
-      background-color: var(--gold-crayola);
-      color: var(--black);
-    }
   
   
-  
-    /**
-     * RESERVATION
-     */
-  
-    .reservation .input-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 20px;
-    }
-  
-    .reservation .input-wrapper:nth-child(4) {
-      grid-template-columns: repeat(3, 1fr);
-    }
   
   
   
@@ -1283,5 +1229,6 @@ body.nav-active { overflow: hidden; }
     .navbar { margin-inline: auto; }
   
   }
+
   }
-  }
+}
