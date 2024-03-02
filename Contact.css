@@ -706,12 +706,12 @@ body.nav-active { overflow: hidden; }
   #Contact us
 \*-----------------------------------*/
 
-.about-main {
+.contact-main {
   background: #000;
   color: #fff;
 }
 
-#aboutUs {
+#contactUs {
 width: 100vw;
 height: 110vh;
 display: flex;
@@ -724,7 +724,7 @@ height: 100%;
 padding: 50px 50px 40px 30px;
 }
 
-#aboutUs hr {
+#contactUs hr {
 width: 50%;
 height: 2px;
 border: none;
